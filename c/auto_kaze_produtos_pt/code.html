@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products - AUTO KAZE</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Sora:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-primary": "#3f2e00",
+                    "secondary-fixed-dim": "#c9c6c5",
+                    "secondary-container": "#474646",
+                    "surface-dim": "#131313",
+                    "surface": "#131313",
+                    "surface-card": "#151515",
+                    "on-surface": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#474646",
+                    "on-primary-fixed": "#251a00",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container": "#201f1f",
+                    "on-background": "#e5e2e1",
+                    "on-tertiary-container": "#555757",
+                    "on-primary-fixed-variant": "#5a4300",
+                    "glass-bg": "rgba(21, 21, 21, 0.7)",
+                    "outline-variant": "#4f4632",
+                    "primary-fixed-dim": "#f7be00",
+                    "on-primary-container": "#6d5300",
+                    "surface-bright": "#393939",
+                    "tertiary-container": "#cdcdcd",
+                    "surface-container-highest": "#353534",
+                    "surface-variant": "#353534",
+                    "error": "#ffb4ab",
+                    "on-tertiary": "#2f3131",
+                    "outline": "#9c8f78",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "secondary": "#c9c6c5",
+                    "inverse-primary": "#775a00",
+                    "primary-container": "#ffc400",
+                    "inverse-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "primary": "#ffe6b3",
+                    "on-secondary-container": "#b7b4b4",
+                    "surface-container-low": "#1c1b1b",
+                    "on-secondary": "#313030",
+                    "on-surface-variant": "#d3c5ab",
+                    "surface-tint": "#f7be00",
+                    "background": "#131313",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed": "#e2e2e2",
+                    "accent-glow": "rgba(255, 196, 0, 0.1)",
+                    "primary-fixed": "#ffdf99",
+                    "border-muted": "#3A3A3A",
+                    "error-container": "#93000a",
+                    "tertiary": "#e9e9e9",
+                    "secondary-fixed": "#e5e2e1",
+                    "inverse-on-surface": "#313030"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin": "32px",
+                    "lg": "24px",
+                    "unit": "4px",
+                    "xl": "48px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "xxl": "80px"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "headline-xl-mobile": [
+                            "Sora"
+                    ],
+                    "label-md": [
+                            "JetBrains Mono"
+                    ],
+                    "headline-xl": [
+                            "Sora"
+                    ],
+                    "display-lg": [
+                            "Sora"
+                    ],
+                    "label-sm": [
+                            "JetBrains Mono"
+                    ],
+                    "headline-md": [
+                            "Sora"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-xl-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.04em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .noise-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        
+        .product-card-image {
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s ease;
+            filter: grayscale(50%) contrast(1.1);
+        }
+        
+        .group:hover .product-card-image {
+            transform: scale(1.05);
+            filter: grayscale(0%) contrast(1.1);
+        }
+
+        .glow-accent {
+            background: radial-gradient(circle at center, rgba(255, 196, 0, 0.15) 0%, rgba(0,0,0,0) 70%);
+        }
+
+        /* Modal transitions */
+        .modal-enter { opacity: 0; transform: scale(0.95); }
+        .modal-enter-active { opacity: 1; transform: scale(1); transition: opacity 300ms, transform 300ms; }
+        .modal-exit { opacity: 1; transform: scale(1); }
+        .modal-exit-active { opacity: 0; transform: scale(0.95); transition: opacity 200ms, transform 200ms; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col relative overflow-x-hidden selection:bg-primary-container selection:text-background">
+<div class="noise-bg"></div>
+<!-- TopNavBar Shared Component -->
+<header class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-md border-b border-border-muted flex justify-between items-center px-margin py-md max-w-[1536px] mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary-container tracking-tighter cursor-pointer hover:opacity-80 transition-opacity">
+            AUTO KAZE
+        </div>
+<nav class="hidden md:flex items-center gap-xl">
+<a class="text-primary-container font-bold border-b-2 border-primary-container pb-1 font-body-md text-body-md uppercase tracking-widest active:scale-95 duration-200" href="#">
+                Products
+            </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md uppercase tracking-widest active:scale-95 duration-200 hover:text-primary-container transition-all duration-300" href="#">
+                Shipping
+            </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md uppercase tracking-widest active:scale-95 duration-200 hover:text-primary-container transition-all duration-300" href="#">
+                About
+            </a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md uppercase tracking-widest active:scale-95 duration-200 hover:text-primary-container transition-all duration-300" href="#">
+                Contact
+            </a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center gap-sm bg-primary-container text-on-primary-fixed px-lg py-sm font-label-md text-label-md uppercase tracking-widest hover:bg-primary-fixed transition-colors">
+                VER PRODUTOS
+            </button>
+<button class="md:hidden text-primary-container p-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-xxl relative z-10 w-full max-w-[1536px] mx-auto px-margin">
+<!-- Hero Section -->
+<section class="mb-xxl flex flex-col items-start border-l-4 border-primary-container pl-lg py-md relative">
+<div class="absolute -left-12 top-0 w-64 h-64 glow-accent -z-10 rounded-full blur-3xl"></div>
+<h1 class="font-display-lg text-headline-xl-mobile md:text-display-lg text-on-surface uppercase mb-sm">EQUIPAMENTOS DE <br/><span class="text-primary-container">PERFORMANCE</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Acessórios automotivos projetados com precisão. Inspirados na cultura de rua JDM, desenhados para a excelência mecânica. Eleve seu projeto.
+            </p>
+</section>
+<!-- Filters / Tools Bar -->
+<div class="flex flex-col md:flex-row justify-between items-center mb-xl pb-md border-b border-border-muted gap-md">
+<div class="flex gap-sm overflow-x-auto w-full md:w-auto pb-sm md:pb-0 hide-scrollbar">
+<button class="px-md py-xs bg-surface-container text-on-surface font-label-md text-label-md uppercase border border-border-muted hover:border-primary-container transition-colors whitespace-nowrap">TODOS</button>
+<button class="px-md py-xs bg-transparent text-on-surface-variant font-label-md text-label-md uppercase border border-transparent hover:border-border-muted transition-colors whitespace-nowrap">MANOPLAS</button>
+<button class="px-md py-xs bg-transparent text-on-surface-variant font-label-md text-label-md uppercase border border-transparent hover:border-border-muted transition-colors whitespace-nowrap">AERO</button>
+<button class="px-md py-xs bg-transparent text-on-surface-variant font-label-md text-label-md uppercase border border-transparent hover:border-border-muted transition-colors whitespace-nowrap">INTERIOR</button>
+</div>
+<div class="w-full md:w-64 relative">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="w-full bg-surface-container border border-border-muted text-on-surface font-label-md text-label-md pl-xl pr-md py-xs focus:outline-none focus:border-primary-container focus:shadow-[0_0_15px_rgba(255,196,0,0.1)] transition-all placeholder:text-on-surface-variant/50" placeholder="BUSCAR CATÁLOGO" type="text"/>
+</div>
+</div>
+<!-- Product Grid (Bento-ish asymmetric feel) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Product Card 1 (Large/Featured) -->
+<article class="group relative bg-surface-card border border-border-muted flex flex-col overflow-hidden col-span-1 md:col-span-2 lg:col-span-2 row-span-2 min-h-[500px]">
+<div class="absolute inset-0 z-0">
+<img alt="Titanium Shift Knob" class="w-full h-full object-cover product-card-image" data-alt="A highly detailed close-up shot of a meticulously machined titanium gear shift knob resting inside a high-end sports car interior. The lighting is cinematic and dramatic, mimicking neon streetlights reflecting off the polished metal surface. The surrounding interior is wrapped in dark Alcantara with subtle red stitching. The overall mood is aggressive, precise, and distinctly JDM-inspired, utilizing deep blacks and high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnWP8Ozy3X7Td_fbJf6U9H8zpbTW7bYfLyZaq93czkZ4rSSbdQ3IHBELaddWexSvzXCInPwSDfEXereGm0kCIScHPVx4alb79yHtKkLHQVbTFiaXhGDE7UFCW3yJX8uP9MLY0L7nUHz0ccoDrlqabggurwEDie8u7-ikctiXw1eCrm50hDRuqFwwmbTkKXbQ_bSPkWuQUUMaZBzl3KH2apVetsfNnTGenWrGh3alvGdKSIJrcBA9LS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+</div>
+<div class="absolute top-md right-md z-10">
+<span class="bg-surface-container-lowest/90 border border-border-muted text-primary-container font-label-sm text-label-sm px-sm py-xs uppercase tracking-widest backdrop-blur-sm">LANÇAMENTO</span>
+</div>
+<div class="relative z-10 flex flex-col justify-end h-full p-xl">
+<div class="flex justify-between items-end gap-md">
+<div>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-md font-bold text-on-surface uppercase tracking-tight mb-xs">MANOPLA DE TITÂNIO TK-01</h2>
+<p class="font-label-md text-label-md text-on-surface-variant mb-md max-w-md">Titânio sólido de 450g. Fresado com precisão para engates de marcha táteis.</p>
+<div class="font-label-md text-label-md text-primary-container border border-primary-container/30 px-md py-xs inline-block bg-background/50 backdrop-blur-md">
+                                R$ 450,00
+                            </div>
+</div>
+<button class="shrink-0 bg-primary-container text-background font-label-md text-label-md uppercase tracking-widest px-xl py-md hover:bg-primary-fixed transition-colors flex items-center gap-sm" onclick="openModal('TK-01 TITANIUM SHIFTER')">
+                            COMPRAR <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative bg-surface-card border border-border-muted flex flex-col overflow-hidden min-h-[400px]">
+<div class="h-3/5 w-full overflow-hidden relative border-b border-border-muted">
+<img alt="Carbon Fiber Spoiler" class="w-full h-full object-cover product-card-image" data-alt="A sleek, aerodynamic carbon fiber rear spoiler mounted on a heavily modified black sports car. The scene is shot in a dimly lit garage with a single overhead spot-light illuminating the intricate carbon weave pattern. The aesthetic is raw, technical, and stealthy, emphasizing modern performance engineering and dark JDM street culture themes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgTRNNNxy2MB7qJ7UzYijM8mW8HUHxMqxQA_aq4-LggGCNDpkfNjPwFMl7P1MzWxrNz3FvuHH91nED5n7eqLS-jxThHiTtugQ9EgSjIqmB8ZwwNHCkIfwNMMIgYjmX6g9mUgw1EljZQ4IYF-p6y5frF2XwzwfVGVAPv0N-IJyR5fGWdWlpFXBdvx-EOmdyb2H9_rPK6BhhS3FreNGdqE1zr7EO8W1n82ICdnBRzJkkQdj9T13nOmul"/>
+</div>
+<div class="p-md flex flex-col flex-grow justify-between relative">
+<!-- Subtle glow behind content -->
+<div class="absolute top-0 right-0 w-32 h-32 glow-accent -z-10 rounded-full blur-2xl"></div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-xs">SPOILER AERO-V1</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-sm">Construção em fibra de carbono a seco. Downforce comprovado em pista.</p>
+</div>
+<div class="flex justify-between items-center mt-md">
+<span class="font-label-md text-label-md text-primary-container">R$ 1.890,00</span>
+<button class="bg-transparent border border-border-muted text-on-surface font-label-sm text-label-sm uppercase px-md py-xs hover:border-primary-container hover:text-primary-container transition-colors" onclick="openModal('AERO-V1 SPOILER')">
+                            COMPRAR
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative bg-surface-card border border-border-muted flex flex-col overflow-hidden min-h-[400px]">
+<div class="h-3/5 w-full overflow-hidden relative border-b border-border-muted">
+<img alt="Forged Lug Nuts" class="w-full h-full object-cover product-card-image" data-alt="A set of high-performance forged aluminum wheel lug nuts arranged neatly on a dark, textured metallic workbench. They are anodized in a deep, burning neo-chrome finish that reflects subtle purple, blue, and gold tones. The lighting is low-key, focusing entirely on the technical precision and metallic luster of the automotive hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcq_EgEqfO9iRP4N-yJBXPTqV_j8-nctdiAnpFmq4EenP-bCYfLBThSzCyiZf8cODBx6hSn465pkMkNeU-psq4N14UiZSnDzfZeHBnz9KzxUX7CgjuPT1FKDwXRkXqqW-Wf530oLZ57VCkD4arluUMyNtr_K_P_hTQX3Dmva7pCiTo38i7PQiyGH3eIRNCNRmNDR6b0DQnX1321thoVcoS2X2qyM_iP3KT4u7W910d5GQaA4iNx5Qo"/>
+</div>
+<div class="p-md flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-xs">PARAFUSOS DE RODA FORJADOS</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-sm">Alumínio 7075-T6. Acabamento neo-chrome. Leve.</p>
+</div>
+<div class="flex justify-between items-center mt-md">
+<span class="font-label-md text-label-md text-primary-container">R$ 220,00</span>
+<button class="bg-transparent border border-border-muted text-on-surface font-label-sm text-label-sm uppercase px-md py-xs hover:border-primary-container hover:text-primary-container transition-colors" onclick="openModal('FORGED LUG NUTS')">
+                            COMPRAR
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group relative bg-surface-card border border-border-muted flex flex-col overflow-hidden min-h-[400px]">
+<div class="h-3/5 w-full overflow-hidden relative border-b border-border-muted">
+<img alt="Suede Steering Wheel" class="w-full h-full object-cover product-card-image" data-alt="A deep-dish aftermarket steering wheel wrapped in black suede with a prominent yellow center stripe. It is installed in a stripped-out race car interior featuring a roll cage in the blurred background. The image is gritty and industrial, captured with high contrast lighting that highlights the suede texture and the striking yellow accent against the dark environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsT3QSz4vtypxvrhUgadB8lMigX5iIPsVj-fWA9_BJuMUoCFlgyfApqQSVneavttTT4Tw-MTWEkkSpD5Y3xWFe3f7hFE4aUMlICMcZ3k4eWXbhTKS8Gww5OQCfK4k0jhy-LZWU4vMMV79g1KqnME_qzK_RjCMQoXi9D9UTLSgTs8unX-_tLdfNmIOxD4hPrOoJja3MNfHhh9d9bKAW5ADMAgxcfQPN4LLsasHZ7h59V-s24uknM57z"/>
+</div>
+<div class="p-md flex flex-col flex-grow justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-xs">VOLANTE DRIFT PRO</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mb-sm">Diâmetro de 330mm. Revestimento em camurça premium com marcação central amarela.</p>
+</div>
+<div class="flex justify-between items-center mt-md">
+<span class="font-label-md text-label-md text-primary-container">R$ 780,00</span>
+<button class="bg-transparent border border-border-muted text-on-surface font-label-sm text-label-sm uppercase px-md py-xs hover:border-primary-container hover:text-primary-container transition-colors" onclick="openModal('DRIFT PRO WHEEL')">
+                            COMPRAR
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 5 (Banner style) -->
+<article class="group relative bg-surface-card border border-border-muted flex flex-col overflow-hidden col-span-1 md:col-span-2 h-[300px]">
+<div class="absolute inset-0 z-0">
+<img alt="Titanium Exhaust" class="w-full h-full object-cover product-card-image" data-alt="A wide shot of a high-performance exhaust system laid out on a dark concrete floor. The titanium piping features beautiful blue and purple 'burnt' coloration near the tips. The scene is illuminated by dramatic side-lighting that emphasizes the mechanical complexity, precise welds, and raw metallic aesthetic of the automotive engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9C7Ot8irFE30MV1gXmGxzJ9yBGLLRQpxzTBli-xL1-YYrD1RwW5Hctk_nuBlKhWanjk2S9FTrqIOqI8lDWNzgHFYV7hD32aQJ05u549tMitfv2CrFe0l0nZFAdZCjH65pZtbiK5IbzXp86UzYSFHjMZyIK3Im12G9vzvi11yTL0hgS0ic9TxbjKPDviMgx_gZgXbRGEnANPyvB-PY6r3FlLl7hxlk94ynt2o5kGli2V7dMI71ym6d"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 flex flex-col justify-center h-full p-xl max-w-lg">
+<span class="text-primary-container font-label-sm text-label-sm uppercase tracking-widest mb-sm block">EM BREVE</span>
+<h2 class="font-headline-xl text-headline-xl-mobile md:text-headline-md font-bold text-on-surface uppercase tracking-tight mb-xs">ESCAPAMENTO KAZE SPEC-R</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Sistema cat-back totalmente em titânio. Projetado para fluxo máximo e ronco agressivo.</p>
+<div>
+<button class="bg-transparent border border-border-muted text-on-surface font-label-md text-label-md uppercase px-lg py-sm opacity-50 cursor-not-allowed">
+                            INDISPONÍVEL
+                        </button>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container-lowest w-full border-t border-border-muted flex flex-col items-center gap-lg py-xxl px-margin text-center relative z-10">
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface uppercase">
+            AUTO KAZE
+        </div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 uppercase tracking-widest" href="#">WhatsApp</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 uppercase tracking-widest" href="#">Email</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 uppercase tracking-widest" href="#">Mercado Livre</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100 uppercase tracking-widest" href="#">Facebook</a>
+</div>
+<div class="font-label-sm text-label-sm text-on-tertiary-fixed-variant opacity-50 mt-md">
+            © 2024 AUTO KAZE. PERFORMANCE &amp; PRECISION.
+        </div>
+</footer>
+<!-- Marketplace Selection Modal -->
+<div class="fixed inset-0 z-[100] hidden items-center justify-center px-margin" id="purchaseModal">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-background/80 backdrop-blur-md cursor-pointer" onclick="closeModal()"></div>
+<!-- Modal Content -->
+<div aria-modal="true" class="relative bg-surface-card border border-border-muted w-full max-w-md shadow-2xl flex flex-col" role="dialog">
+<!-- Modal Header -->
+<div class="p-lg border-b border-border-muted flex justify-between items-center bg-surface-container-lowest">
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">CHOOSE PLATFORM</h3>
+<button class="text-on-surface-variant hover:text-primary-container transition-colors p-xs" onclick="closeModal()">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-xl flex flex-col gap-lg relative overflow-hidden">
+<div class="absolute bottom-0 right-0 w-48 h-48 glow-accent -z-10 rounded-full blur-3xl"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-sm">
+                    You are purchasing: <span class="text-on-surface font-bold" id="modalProductName">Product Name</span>.<br/>
+                    Select where you want to complete the transaction.
+                </p>
+<!-- Platform Options -->
+<a class="group flex items-center justify-between p-lg border border-border-muted hover:border-[#FFE600] bg-surface-container hover:bg-surface-container-highest transition-all" href="#">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest group-hover:text-[#FFE600] transition-colors">MERCADO LIVRE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-xs">Fast shipping, secure payment</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-[#FFE600] transition-colors" style="font-variation-settings: 'FILL' 0;">open_in_new</span>
+</a>
+<a class="group flex items-center justify-between p-lg border border-border-muted hover:border-[#1877F2] bg-surface-container hover:bg-surface-container-highest transition-all" href="#">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-widest group-hover:text-[#1877F2] transition-colors">FACEBOOK MARKETPLACE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-xs">Direct contact, local pickup</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-[#1877F2] transition-colors" style="font-variation-settings: 'FILL' 0;">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Interactive Scripts -->
+<script>
+        const modal = document.getElementById('purchaseModal');
+        const modalProductName = document.getElementById('modalProductName');
+        
+        function openModal(productName) {
+            modalProductName.textContent = productName;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            
+            // Trigger animation frame for CSS transition
+            requestAnimationFrame(() => {
+                const modalContent = modal.querySelector('div[role="dialog"]');
+                modalContent.classList.add('modal-enter-active');
+                modalContent.classList.remove('modal-enter', 'modal-exit-active');
+            });
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modalContent = modal.querySelector('div[role="dialog"]');
+            modalContent.classList.remove('modal-enter-active');
+            modalContent.classList.add('modal-exit-active');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modalContent.classList.remove('modal-exit-active');
+                document.body.style.overflow = '';
+            }, 200); // match transition duration
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+    </script>
+</body></html>

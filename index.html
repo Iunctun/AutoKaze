@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AUTO KAZE | Acessórios Automotivos</title>
+<meta content="Auto Kaze — acessórios automotivos com estilo, qualidade e pronta entrega. Compre via Mercado Livre ou Facebook Marketplace." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Sora:wght@100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md">
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-md border-b border-border-muted">
+<div class="flex justify-between items-center w-full px-margin py-md max-w-screen-2xl mx-auto">
+<a class="flex items-center gap-4" href="index.html">
+<span class="font-headline-md text-headline-md font-bold tracking-tighter text-primary-container">AUTO KAZE</span>
+</a>
+<nav class="hidden md:flex gap-8" id="mainNav">
+<a aria-current="page" class="nav-link text-on-surface font-medium font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors duration-300" href="index.html">Início</a>
+<a class="nav-link text-on-surface font-medium font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors duration-300" href="produtos.html">Produtos</a>
+<a class="nav-link text-on-surface font-medium font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors duration-300" href="envio.html">Envio</a>
+<a class="nav-link text-on-surface font-medium font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors duration-300" href="sobre.html">Sobre</a>
+<a class="nav-link text-on-surface font-medium font-label-md text-label-md uppercase tracking-wider hover:text-primary-container transition-colors duration-300" href="contato.html">Contato</a>
+</nav>
+<div class="flex items-center gap-md">
+<a class="hidden md:inline-flex btn-primary px-6 py-3 font-label-md text-label-md uppercase tracking-wider items-center justify-center transition-colors" href="produtos.html">VER PRODUTOS</a>
+<button aria-expanded="false" aria-label="Menu" class="md:hidden text-primary-container p-sm" id="navToggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<nav class="md:hidden hidden flex-col border-t border-border-muted bg-background" id="mobileNav">
+<a aria-current="page" class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="index.html">Início</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="produtos.html">Produtos</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="envio.html">Envio</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="sobre.html">Sobre</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider" href="contato.html">Contato</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[72px] md:pt-0">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[90vh] flex items-center overflow-hidden px-margin py-xxl" id="inicio">
+<!-- Video Background -->
+<div class="hero-video-wrap" id="heroVideoWrap">
+<video autoplay="" id="heroVideo" loop="" muted="" playsinline="" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuDJURZ0ih4lEsCuQMpzv-lyUTf81P4ILuFhfMVdNflgObuh1c_MHKIz0iO7fVp9PIs8tPGZooJhD7ES0AYTcl4vF2BjTOkxbOn0ykdmqTynM5ZbGxg1Hh2E_UqAk9OvR0E7bl8_zAmvGFtksxd59ShiaE1xth8MOxZPxWIEYklHWcStI7uBNGhzxMVAZMz3EfxH3LcyzsrOCYlw0BDFQl6c1kW_3NQDP30VluAIwJHLGMU8PM9rqQjK" preload="auto">
+<source media="(max-width: 767px)" src="assets/video/hero-mobile.mp4" type="video/mp4"/>
+<source src="assets/video/hero-desktop.mp4" type="video/mp4"/>
+</video>
+<div class="hero-fallback" data-alt="Uma foto cinematográfica de um carro esportivo JDM modificado em alta velocidade por uma cidade japonesa moderna iluminada por neon à noite. A iluminação é escura, pontuada por intensos traços de faróis amarelos e brancos vibrantes cortando a escuridão." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJURZ0ih4lEsCuQMpzv-lyUTf81P4ILuFhfMVdNflgObuh1c_MHKIz0iO7fVp9PIs8tPGZooJhD7ES0AYTcl4vF2BjTOkxbOn0ykdmqTynM5ZbGxg1Hh2E_UqAk9OvR0E7bl8_zAmvGFtksxd59ShiaE1xth8MOxZPxWIEYklHWcStI7uBNGhzxMVAZMz3EfxH3LcyzsrOCYlw0BDFQl6c1kW_3NQDP30VluAIwJHLGMU8PM9rqQjK')"></div>
+</div>
+<!-- Dark overlay gradients: stronger toward the left, where the text sits -->
+<div class="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/55 to-[#050505]/10"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/60"></div>
+<!-- Vignette -->
+<div class="absolute inset-0 hero-vignette pointer-events-none"></div>
+<!-- Diagonal motion lines -->
+<div class="absolute inset-0 hero-motion-lines pointer-events-none"></div>
+<!-- Discreet particles -->
+<div class="hero-particles absolute inset-0 pointer-events-none"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="relative z-10 max-w-screen-xl mx-auto flex flex-col items-start gap-md text-left">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-[0.3em]">AUTO KAZE • ACESSÓRIOS AUTOMOTIVOS</span>
+<h1 class="font-display-lg text-4xl sm:text-6xl md:text-display-lg italic text-on-surface drop-shadow-lg max-w-3xl">
+                    ESTILO QUE <span class="text-primary-container">MOVE.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Acessórios automotivos para quem transforma o carro em personalidade.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<a class="btn-primary px-8 py-4 font-label-md text-label-md uppercase tracking-wider text-center transition-colors" href="produtos.html">VER PRODUTOS</a>
+<a class="btn-hero-outline px-8 py-4 font-label-md text-label-md uppercase tracking-wider text-center transition-colors" href="contato.html">FALE CONOSCO</a>
+</div>
+<div class="border border-[#3A3A3A] px-3 py-1 inline-flex items-center gap-2 bg-[#050505]/80 mt-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest">PRONTA ENTREGA • ENVIO PARA TODO O BRASIL</span>
+</div>
+</div>
+</section>
+<!-- Product Grid (teaser) -->
+<section class="px-margin py-xxl max-w-screen-2xl mx-auto" id="produtos">
+<div class="mb-xl flex justify-between items-end border-b border-[#3A3A3A] pb-4">
+<h2 class="font-headline-xl text-headline-xl text-on-surface italic">PRODUTOS</h2>
+<a class="font-label-md text-label-md text-on-surface-variant hidden md:block hover:text-primary-container transition-colors" href="produtos.html">VER CATÁLOGO COMPLETO /// &#8594;</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Product Card 1 -->
+<div class="card-bg flex flex-col group relative overflow-hidden transition-all hover:bg-[#252525]">
+<div class="aspect-video relative overflow-hidden bg-[#050505]">
+<img class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-500 saturate-50 group-hover:saturate-100" data-alt="Close-up de uma manopla de câmbio automotiva forjada em aço, sobre uma superfície metálica escura." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj0eLo51FOeMKqPs3hj0yWe4JUs8P1MdyOWiNtgcXMfcdxtNmodhuNPZlQLXfM-6qUULwZpF4zBQpu8l2kCLypyYmkGFtyA6BBMGL0dFuOPuXHaYkfFhCVy9kwhNIcfWvpcXWBDn9h6mGhjNTimE1C9EJxyqbnZMYLn9r3fxsb98qE_3-YILyqaAuNxRBB1BiRVaph7HXRfLNQe1F5k-vzNI67GXI0ufFoVnOu6wOmQS1nsBKLc2Rm"/>
+<div class="absolute top-4 left-4 border border-[#3A3A3A] bg-[#050505]/90 px-2 py-1">
+<span class="font-label-sm text-label-sm text-primary-container">PRONTA ENTREGA</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-grow border-t border-[#3A3A3A]">
+<h3 class="font-headline-md text-headline-md text-on-surface">Manopla de Câmbio Titanium</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Usinada em CNC, peso ideal para engates rápidos. Design inspirado nas pistas de Tóquio.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label-md text-label-md text-on-surface text-lg">R$ 289,00</span>
+<button class="btn-outline px-4 py-2 font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-black hover:border-primary-container transition-all" onclick="openModal('Manopla de Câmbio Titanium')">COMPRAR</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="card-bg flex flex-col group relative overflow-hidden transition-all hover:bg-[#252525]">
+<div class="aspect-video relative overflow-hidden bg-[#050505]">
+<img class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-500 saturate-50 group-hover:saturate-100" data-alt="Spoiler aerodinâmico automotivo com acabamento em fibra de carbono, contra fundo preto." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm0rgZtv2zidOKlYMZOYdMxDsCG-OwTDjTkt56y-k0bMyEmD0isVF85BGWwvhssWiy4DKNnhb6fbUceUIHKrfLhA4khrdtSyDPdY85swmKpkeKNRnrboZO8kbWysKbyGamZlr939ZigAgDv8o2mMdYvhQtjsobKOvQ1JLPasaXPHLCvosorIzW1P_05t4yJ9SX6nZxj3mVfbVZOqxcVqvNc4Uzlg02fHIkcvp7rjMEH3mQ0oB-8_L0"/>
+<div class="absolute top-4 left-4 border border-[#3A3A3A] bg-[#050505]/90 px-2 py-1">
+<span class="font-label-sm text-label-sm text-primary-container">PRONTA ENTREGA</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-grow border-t border-[#3A3A3A]">
+<h3 class="font-headline-md text-headline-md text-on-surface">Lip Spoiler Carbon-Look</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Acabamento impecável em textura de fibra de carbono. Aerodinâmica agressiva para a dianteira.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label-md text-label-md text-on-surface text-lg">R$ 145,00</span>
+<button class="btn-outline px-4 py-2 font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-black hover:border-primary-container transition-all" onclick="openModal('Lip Spoiler Carbon-Look')">COMPRAR</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="card-bg flex flex-col group relative overflow-hidden transition-all hover:bg-[#252525]">
+<div class="aspect-video relative overflow-hidden bg-[#050505]">
+<img class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity group-hover:scale-105 duration-500 saturate-50 group-hover:saturate-100" data-alt="Roda automotiva esportiva e pinça de freio de alta performance em destaque, com sombras acentuadas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_s2D7NbKj5y-IDtUHqL20AoZ2DwTuZ6Az1xzNsTygdtLz_W-8SN2qe52E__X8PmueQAqsYnKIOHU6woqqw9k8ydCJCexFqRNYxxo3fOmKw1JYLMqraZz6i33BwaGuKbJD3IuqtNJudqJjhJ-jYAgmFsi5eEHlK7hd6uQe0GYMoWr3KlgcfNEF-wITaKmOuejM_edC0b3vt81CKz5MhbIftJGafSZhzm0Pe6JwjLkMqrnb8UYmBp3g"/>
+<div class="absolute top-4 left-4 border border-[#3A3A3A] bg-[#050505]/90 px-2 py-1">
+<span class="font-label-sm text-label-sm text-primary-container">PRONTA ENTREGA</span>
+</div>
+</div>
+<div class="p-6 flex flex-col gap-4 flex-grow border-t border-[#3A3A3A]">
+<h3 class="font-headline-md text-headline-md text-on-surface">Capas de Pinça Kaze</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Visual de alta performance para o sistema de freios. Resistente a altas temperaturas.</p>
+<div class="flex justify-between items-center mt-4">
+<span class="font-label-md text-label-md text-on-surface text-lg">R$ 89,90</span>
+<button class="btn-outline px-4 py-2 font-label-sm text-label-sm uppercase hover:bg-primary-container hover:text-black hover:border-primary-container transition-all" onclick="openModal('Capas de Pinça Kaze')">COMPRAR</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-border-muted flex flex-col md:flex-row justify-between items-center w-full px-margin py-xl max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2 mb-6 md:mb-0">
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-widest">AUTO KAZE</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Estilo que move.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-4">© 2026 AUTO KAZE. PRECISÃO AERODINÂMICA.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-6">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all uppercase" href="contato.html">WhatsApp</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all uppercase" href="contato.html">E-mail</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all uppercase" href="#">Mercado Livre</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all uppercase" href="#">Facebook</a>
+</nav>
+</footer>
+<!-- Purchase Modal -->
+<div class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm" id="purchaseModal">
+<div aria-modal="true" class="card-bg w-full max-w-md p-8 relative shadow-[0_0_15px_rgba(255,196,0,0.1)]" role="dialog">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary-container transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2 italic border-b border-[#3A3A3A] pb-4">ESCOLHA O CANAL</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                Você está comprando: <span class="text-on-surface font-bold" id="modalProductName">Produto</span>.<br/>
+                Selecione onde deseja finalizar sua compra de forma segura:
+            </p>
+<div class="flex flex-col gap-4">
+<a class="btn-primary flex items-center justify-center gap-3 px-6 py-4 font-label-md text-label-md uppercase tracking-wider transition-colors w-full" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+                    COMPRAR NO MERCADO LIVRE
+                </a>
+<a class="btn-outline flex items-center justify-center gap-3 px-6 py-4 font-label-md text-label-md uppercase tracking-wider transition-colors w-full hover:bg-[#252525]" href="#">
+<span class="material-symbols-outlined">storefront</span>
+                    FACEBOOK MARKETPLACE
+                </a>
+</div>
+<div class="mt-6 text-center border border-[#3A3A3A] p-3 bg-[#050505]">
+<p class="font-label-sm text-label-sm text-primary-container">ENVIAMOS PARA TODO O BRASIL</p>
+</div>
+</div>
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

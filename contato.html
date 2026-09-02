@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato | AUTO KAZE</title>
+<meta content="Fale com a AUTO KAZE por WhatsApp ou e-mail — suporte direto, dúvidas técnicas e status de pedidos." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md text-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- Ambient Glow Background -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden flex justify-center items-center">
+<div class="w-[800px] h-[800px] rounded-full glow-accent absolute opacity-50 blur-3xl"></div>
+</div>
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-glass-bg backdrop-blur-md border-b border-border-muted">
+<div class="flex justify-between items-center px-margin py-md max-w-[1536px] mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary-container tracking-tighter" href="index.html">AUTO KAZE</a>
+<nav class="hidden md:flex gap-lg font-body-md text-body-md uppercase tracking-widest" id="mainNav">
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors" href="produtos.html">Produtos</a>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors" href="envio.html">Envio</a>
+<a class="nav-link text-on-surface-variant hover:text-primary transition-colors" href="sobre.html">Sobre</a>
+<a aria-current="page" class="nav-link" href="contato.html">Contato</a>
+</nav>
+<div class="flex items-center gap-md">
+<a class="hidden md:block bg-primary-container text-on-primary-container font-label-md text-label-md uppercase px-lg py-sm rounded-none tracking-widest hover:bg-primary-fixed transition-colors active:scale-95 duration-200" href="produtos.html">VER PRODUTOS</a>
+<button aria-expanded="false" aria-label="Menu" class="md:hidden text-primary-container" id="navToggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<nav class="md:hidden hidden flex-col border-t border-border-muted bg-background" id="mobileNav">
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="index.html">Início</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="produtos.html">Produtos</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="envio.html">Envio</a>
+<a class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider border-b border-border-muted" href="sobre.html">Sobre</a>
+<a aria-current="page" class="nav-link px-margin py-md text-on-surface font-label-md text-label-md uppercase tracking-wider" href="contato.html">Contato</a>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="flex-grow z-10 relative pt-[120px] pb-xxl px-margin max-w-[1536px] mx-auto w-full">
+<div class="grid md:grid-cols-12 gap-gutter">
+<!-- Header Section -->
+<div class="col-span-12 md:col-span-10 md:col-start-2 text-center mb-xxl">
+<h1 class="font-display-lg text-4xl sm:text-6xl md:text-display-lg text-on-surface uppercase mb-md">CONTATO</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Suporte direto. Dúvidas técnicas. Status de pedidos. Operamos com precisão. Entre em contato pelos canais abaixo para assistência imediata.
+                </p>
+</div>
+<!-- Contact Cards Bento -->
+<div class="col-span-12 md:col-span-10 md:col-start-2 grid md:grid-cols-2 gap-gutter mb-xxl">
+<!-- WhatsApp Card -->
+<div class="bg-surface-card border border-border-muted p-xl flex flex-col justify-between group hover:border-primary-container transition-colors duration-300 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-lg border border-border-muted group-hover:border-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary-container text-[24px]" style="font-variation-settings: 'FILL' 1;">forum</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm uppercase">Suporte WhatsApp</h2>
+<p class="text-on-surface-variant mb-lg font-body-md text-body-md">Mensagens instantâneas para suporte técnico rápido e dúvidas sobre pedidos.</p>
+<a class="font-label-md text-label-md text-primary-container tracking-widest block mb-xl" href="tel:+5547992916790">+55 (47) 99291-6790</a>
+</div>
+<a class="relative z-10 bg-primary-container text-on-primary-container font-label-md text-label-md uppercase px-lg py-md w-full text-center hover:bg-primary-fixed transition-colors active:scale-95 duration-200" href="tel:+5547992916790">ENVIAR MENSAGEM</a>
+</div>
+<!-- Email Card -->
+<div class="bg-surface-card border border-border-muted p-xl flex flex-col justify-between group hover:border-surface-bright transition-colors duration-300 relative overflow-hidden">
+<div class="absolute inset-0 bg-surface-bright/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center mb-lg border border-border-muted group-hover:border-surface-bright transition-colors">
+<span class="material-symbols-outlined text-on-surface text-[24px]" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-sm uppercase">E-mail Direto</h2>
+<p class="text-on-surface-variant mb-lg font-body-md text-body-md">Para consultas detalhadas, propostas comerciais e documentação.</p>
+<a class="font-label-md text-label-md text-on-surface tracking-widest block mb-xl" href="mailto:johniunctun@gmail.com">johniunctun@gmail.com</a>
+</div>
+<a class="relative z-10 bg-transparent border border-border-muted text-on-surface font-label-md text-label-md uppercase px-lg py-md w-full text-center hover:border-on-surface transition-colors active:scale-95 duration-200" href="mailto:johniunctun@gmail.com">ENVIAR E-MAIL</a>
+</div>
+</div>
+<!-- Catalog Call to Action -->
+<div class="col-span-12 md:col-span-10 md:col-start-2">
+<div class="bg-surface-card border border-border-muted p-xl flex flex-col md:flex-row items-center justify-between gap-lg relative overflow-hidden">
+<div class="z-10 text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase mb-xs">Explore Peças de Performance</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Veja nosso catálogo completo de componentes projetados com precisão.</p>
+</div>
+<a class="z-10 bg-transparent border border-primary-container text-primary-container font-label-md text-label-md uppercase px-xl py-md text-center hover:bg-primary-container hover:text-on-primary-container transition-all active:scale-95 duration-200 whitespace-nowrap" href="produtos.html">VER CATÁLOGO</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-border-muted relative z-10">
+<div class="flex flex-col items-center gap-lg py-xxl px-margin w-full text-center max-w-[1536px] mx-auto">
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface uppercase mb-md">AUTO KAZE</div>
+<div class="flex flex-wrap justify-center gap-xl mb-lg">
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100" href="tel:+5547992916790">WhatsApp</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100" href="mailto:johniunctun@gmail.com">E-mail</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Mercado Livre</a>
+<a class="font-label-sm text-label-sm text-on-tertiary-fixed-variant hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Facebook</a>
+</div>
+<div class="font-label-sm text-label-sm text-on-tertiary-fixed-variant opacity-50 uppercase tracking-widest">© 2026 AUTO KAZE. PERFORMANCE E PRECISÃO.</div>
+</div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
